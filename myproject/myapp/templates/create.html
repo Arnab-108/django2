@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Page</title>
+</head>
+<body>
+    <h1>Create a New Key-Value Pair</h1>
+    <!-- Form for submitting data -->
+    <form method="post" action="/create">
+        {% csrf_token %}
+        <label for="key">Key:</label>
+        <input type="text" name="key"><br>
+        <label for="value">Value:</label>
+        <input type="text" name="value"><br>
+        <button type="submit">Create</button>
+    </form>
+    <a href="/read">Read Data</a>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read Page</title>
+</head>
+<body>
+    <h1>Current Dictionary Data</h1>
+    <ul>
+        {% for key, value in data.items %}
+            <li>{{ key }}: {{ value }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/create">Create Data</a>
+    <a href="/update">Update Data</a>
+    <a href="/delete">Delete Data</a>
+</body>
+</html>
